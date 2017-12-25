@@ -26,12 +26,14 @@ SECRET_KEY = 'pw@0yob2069@oma78cw&kzkj=q6e*wu&y79^qer8axgvqum8p0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.20.182','localhost','127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'blogApp.apps.BlogappConfig',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'blogApp',
+    # 'blogApp',
 ]
 
 MIDDLEWARE = [
